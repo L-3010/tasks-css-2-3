@@ -1,0 +1,32 @@
+/* task2.css */
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    transition: margin 0.25s ease-out;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+    background-color: #f8f9fa;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.list-group-item.active {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.list-group-item:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+    color: white !important;
+}
