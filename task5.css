@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'arial' ,sans-serif;
+}
+
+body{
+    background-color: rgb(120, 181, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+.form-container{
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2)
+}
+
+.form-header{
+margin-bottom: 25px;
+border-bottom: 1px solid lightgray;
+padding-bottom: 15px;
+}
+
+.form-header h2{
+    margin-bottom: 10px;
+}
+
+.form-header p{
+color: lightgray;
+font-size: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    }
+
+.dual{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.dual input{
+    flex: 1;
+    width: 100%;
+
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(238, 236, 236);
+    border: none;
+    border-radius: 1px;
+    outline: none;
+        }
+
+.input-checkbox {
+    font-size: 13px;
+    color: #666;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.input-checkbox span{
+    text-decoration: none;
+}
+
+.input-checkbox a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.input-checkbox a:hover {
+    text-decoration: none;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto; 
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.login-text {
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 600px) {
+    .dual {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    .form-container {
+        padding: 20px; 
+    }
+
+    .submit-btn {
+        width: 100%; 
+    }
+}
